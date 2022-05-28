@@ -1,0 +1,1031 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --header: #555555;
+    --green: #77be2d;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+a:link,a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+/*HEADER*/
+header{
+    width: 100%;
+}
+.header{
+    background-color: var(--header);
+    width: 100%;
+    height: 48px;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+}
+.icon{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+.call,.mail{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem
+}
+.call{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+/*NAVBAR*/
+nav{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.2rem 0;
+    flex-wrap: wrap;
+}
+
+.nav-items{
+    display: inline-flex;
+    list-style: none;
+    gap: 3.2rem;
+    font-size: 1.6rem;
+}
+
+.company-name{
+    font-size: 3.2rem;
+    color: var(--green);
+}
+
+.active{
+    color: var(--green) !important;
+}
+
+.hamburger-btn{
+    display: none;
+}
+
+.caret-icon{
+    width: 1rem;
+    height: 1rem;
+}
+
+.caret{
+    display: flex;
+    align-items:center;
+    gap: 0.4rem;
+}
+
+/*carousel*/
+main,section{
+    width: 100%;
+}
+.carousel{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /*background-image: url(../img/shamin-haky-RIk-i9rXPao-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    color: white;
+    font-size: 1.6rem;
+    gap: 2.4rem;
+    text-align: center;
+}
+.carousel h2{
+    font-size: 3.5rem;
+}
+
+.bg-img{
+    width: 100%;
+    height: 40rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) ,url(../img/shamin-haky-RIk-i9rXPao-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.dots{
+    display: flex;
+    gap: 0.8rem;
+    position: absolute;
+    bottom: 1.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dots button{
+    width: 1rem;
+    height: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+}
+.current{
+    background-color: var(--green);
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.buttons a{
+    padding: 1rem 1.6rem;
+    border: 0.2rem solid var(--green);
+    color: var(--green);
+}
+
+.buttons a:hover{
+    background-color: var(--green);
+    color: white;
+}
+
+.dots button:hover{
+    cursor: pointer;
+}
+
+/*ABOUT US*/
+
+.about-us{
+    width: 60%;
+    width: 69%;
+    display: flex;
+    margin: 4.5rem auto;
+    flex-wrap: wrap;
+}
+.para{
+    flex-basis: 50%;
+    padding-right: 1rem;
+}
+.para h3{
+    width: auto;
+    position: relative;
+    font-size: 3rem;
+    padding: 2rem;
+    padding-left: 0;
+    padding-top: 0;
+
+}
+.first-word{
+    color: var(--green);
+}
+.para h3::after{
+    content: '';
+    display: block;
+    width: 50%;
+    border-bottom: 0.2rem solid var(--green);
+    bottom: 0;
+    left: 0;
+    padding-top: 2rem;
+}
+
+.image{
+    flex-basis: 50%;
+}
+
+.image img{
+    width: 100%;
+
+    height: 100%;
+}
+
+.para a{
+    padding: 1rem 1.6rem;
+    border: 0.2rem solid var(--green);
+    color: var(--green);
+}
+
+.para a:hover{
+    background-color: var(--green);
+    color: white;
+}
+
+.para{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.4rem;
+    padding-bottom: 4rem;
+}
+
+.para p{
+    margin-bottom: 2.4rem;
+    line-height: 1.6;
+    color: var(--header);
+}
+.image img{
+    display: inline-block;
+}
+
+.info-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+}
+
+.icon-2{
+    width: 2.8rem;
+}
+
+.c{
+    width: 23.5%;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.2rem solid var(--green);
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.c:hover{
+    background-color: var(--green);
+    color: white;
+}
+.c:hover .icon-2{
+    fill: #77be2d ;
+    stroke: white ;
+}
+
+.c h3{
+    font-size: 2.8rem;
+}
+.c p{
+    font-size: 1.3rem;
+
+}
+
+/*what-we-do*/
+
+.what-we-do{
+    background-color: #f5f5f5;
+    /*margin: 4.5rem 0;*/
+    padding: 4rem 0;
+}
+.what-we-do-section,.projects,.latest-blog
+,.our-partners{
+    width: 60%;
+    width: 69%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.what-we-do h3,.projects .title h3,.latest-blog .title h3,
+.our-partners .title h3{
+    position: relative;
+    font-size: 3rem;
+    padding: 2rem;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.what-we-do div h3::after,.projects .title h3::after,
+.latest-blog .title h3::after,
+.our-partners .title h3::after
+{
+    content: '';
+    display: block;
+    width: 50%;
+    border-bottom: 0.2rem solid var(--green);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(50%);
+    padding-top: 1.2rem;
+}
+.what-we-do-section > p,.projects > p,
+.latest-blog > p,
+.our-partners > p{
+    text-align: center;
+    font-size: 1.6rem;
+    width: 60%;
+    width: 69%;
+}
+
+.what-we-do .title{
+    margin-bottom: 1.2rem;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 32%;
+    height: 32.5rem;
+    border: none;
+    background-color: white;
+    border-radius: 0.4rem;
+    box-shadow: rgba(149, 157, 165, 0.05) 0px 8px 24px;
+    margin-bottom: 3.2rem;
+    overflow: hidden;
+
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.card h4,.card p{
+    padding: 1rem 0.8rem;
+} 
+
+.card h4{
+    padding-top: 2rem;
+    font-size: 1.6rem;
+}
+.card p{
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: var(--header);
+}
+
+.card-img:hover img{
+    transform: scale(1.5);
+    transition: all 0.3s linear;
+    cursor: zoom-in;
+    background-image: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6));
+}
+
+.last-word{
+    color: var(--green);
+}
+
+/*LATEST PROJECTS*/
+.projects{
+    width: 60%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+/*slider*//*
+.container-fluid{
+    width: 100%;
+}*//*
+.slider-wrap{
+    position: relative;
+    overflow: hidden;
+    width: 60%;
+    height: 40rem;
+    margin: 0 auto;
+}
+.slider-main{
+    display: flex;
+    gap: 0.8rem;
+    position: absolute;
+    width: max-content;
+}
+
+.item {
+    width: 19.2vw;
+    height: 30rem;
+    display: inline-block;
+    background-image: url(../img/masaaki-komori-NoXUQ54pDac-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+*/
+
+/*-----------------*/
+.galary{
+    width: 60%;
+    width: 69%;
+    margin: 4rem auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+.slides{
+    display: inline-block;
+    width: 33%;
+    height: 30rem;
+    background-image: url(../img/masaaki-komori-NoXUQ54pDac-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0%);
+}
+.slides:nth-of-type(2){
+    transform: translateX(105%);
+}
+.slides:nth-of-type(3){
+    transform: translateX(210%);
+}
+.slides:nth-of-type(4){
+    transform: translateX(315%);
+}
+
+
+.slider-btn{
+    border: none;
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.left-btn{
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+}
+
+.right-btn{
+    top: 50%;
+    right: 0;
+    transform: translate(50%,-50%);
+}
+
+/*-----------------*/
+
+/*LATEST BLOGS*/
+.blog{
+    background-color: #f5f5f5;
+    padding: 4rem 0;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.blog-cards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 4.8rem 0;
+}
+
+.blog-card{
+    width: 32%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.4rem;
+    font-size: 1.4rem;
+    overflow: hidden;
+}
+
+.blog-img{
+    width: 100%;
+    height: 45%;
+    overflow: hidden;
+}
+.blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s linear;
+}
+.metadata{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+.blog-card a{
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+}
+.blog-card svg{
+    width: 1.2rem;
+    height: auto;
+}
+.blog-card h3{
+    font-size: 2rem;
+}
+
+.blog-card p{
+    flex: 1;
+    line-height: 1.4;
+}
+.blog-img:hover img{
+    transform: scale(1.5);
+}
+.blog-img:hover{
+    cursor: zoom-in;
+}
+
+.partners{
+    padding: 4rem 0;
+}
+
+.partners-img{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 12rem;
+}
+.partner-img img{
+    display: inline-block;
+    height: 10rem;
+    object-fit: contain;
+    object-position: center;
+}
+.partners-img-wrapper{
+    width: 60%;
+    width: 69%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    background-color: #333333;
+}
+.footer{
+    width: 60%;
+    width: 69%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 4rem auto;
+    margin-bottom: 0;
+    padding: 4rem 0;
+    color: white;
+    min-height: 30rem;
+}
+
+.footer-item{
+    width: 23%;
+}
+.consal{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.consal .company-name{
+    font-size: 3.6rem;
+}
+.consal p{
+    line-height: 1.5;
+    font-size: 1.6rem;
+}
+
+.recent-posts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.footer-item .title{
+    display: flex;
+    text-align: start;
+    padding-bottom: 0.8rem;
+}
+.footer-item .title{
+    font-size: 2.4rem;
+    position: relative;
+}
+.footer-item .title::after{
+    content: '';
+    display: flex;
+    width: 40%;
+    border: 0.1rem solid white;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.post img{
+    width: 8rem;
+    height: 4rem;
+}
+.post{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.4rem;
+}
+.popular-tags{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.tags{
+    font-size: 1.6rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.tags a{
+    border: 0.1rem solid white;
+    padding: 0.2rem 0.4rem;
+}
+.tags a:hover{
+    color: #333333;
+    background-color: white;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.details{
+    margin-top: 2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+
+.details li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+.details li svg{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.copyright{
+    text-align: center;
+    padding: 1.6rem;
+    background-color: #0e181e;
+    color: white;
+    font-size: 1.6rem;
+}
+/*----------- Media queries----------*/
+
+/*Huge*/
+@media only screen and (max-width: 1200px) {
+    /*ABOUT US*/
+    .about-us{
+        width: 80%;
+    }
+    .c{
+        width: 23%;
+    }
+
+    /*what-we-do*/
+    .what-we-do-section,.projects,.latest-blog,
+    .our-partners{
+        width: 80%;
+    }
+}
+/*Desktop*/
+@media only screen and (max-width: 992px) {
+    /*ABOUT US*/
+    .about-us{
+        width: 95%;
+    }
+    .para{
+        flex-basis: 100%;
+    }
+    .image{
+        flex-basis: 100%;
+    }
+    .c{
+        width: 45%;
+    }
+
+    /*what-we-do*/
+    .what-we-do-section,.projects,.latest-blog,
+    .our-partners{
+        width: 85%;
+    }
+    .what-we-do-section > p,.projects > p,
+    .latest-blog > p,.our-partners > p{
+        width: 80%;
+    }
+
+    
+    /*-----------------*/
+
+    .galary{
+        width: 50%;
+    }
+    .slides{
+        width: 49%;
+    }
+    /*-----------------*/
+
+    .partners-img-wrapper{
+        width: 100%;
+    }
+
+    .footer{
+        width: 90%;
+    }
+
+    .consal .company-name{
+        font-size: 3rem;
+    }
+
+    .footer-item .title{
+        font-size: 1.6rem;
+    }
+
+    .post{
+        font-size: 1.2rem;
+    }
+    .details li svg{
+        width: 2rem;
+    }
+}
+/*Tablet*/
+@media only screen and (max-width: 768px) and (min-width: 480.99px) {
+    html{
+        font-size: 50%;
+    }
+    .header{
+        justify-content: space-between;
+        padding: 0 2.4rem;
+    }
+    /*NAVBAR*/
+    nav{
+        justify-content: space-between;
+        padding-left: 2.2rem;
+        padding-right: 2.2rem;
+    }
+    .nav-items{
+        gap: 1.2rem;
+        font-size: 1.7rem;
+    }
+
+
+    /*ABOUT US*/
+    .about-us{
+        width: 90%;
+    }
+    .para{
+        flex-basis: 100%;
+    }
+    .para p{
+        font-size: 2rem;
+    }
+    .image{
+        flex-basis: 100%;
+    }
+
+
+    .c{
+        width: 45%;
+    }
+
+    .c p{
+        font-size: 1.8rem;
+    }
+
+
+
+
+    /*what-we-do*/
+
+    .what-we-do-section,.projects,.latest-blog,
+    .our-partners{
+        width: 95%;
+    }
+
+    .what-we-do-section > p,.projects > p,
+    .latest-blog > p{
+        font-size: 1.8rem;
+    }
+
+    .what-we-do-section .title h3,.projects .title h3,.latest-blog .title h3,
+    .our-partners .title h3{
+        font-size: 4.4rem;
+    }
+
+    .card{
+        width: 48%;
+        height: 44rem;
+        margin-bottom: 5rem;
+    }
+
+    .card h4{
+        font-size: 2rem;
+    }
+    .card p{
+        font-size: 1.8rem;
+        line-height: 1.4;
+    }
+
+    .cards{
+        margin-top: 6rem;
+    }
+
+    /*LATEST PROJECTS*/
+    
+
+    /*LATEST BLOGS*/
+    .blog-card{
+        width: 47%;
+        height: 45rem;
+    }
+    .blog-card p{
+        line-height: 1.6;
+        font-size: 1.6rem;
+    }
+    .blog-card h3{
+        font-size: 2.4rem;
+    }
+    .metadata{
+        font-size: 1.4rem;
+    }
+
+
+
+    .partners-img-wrapper{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /*footer*/
+    .footer{
+        width: 92%;
+    }
+    .footer-item{
+        width: 48%;
+        margin-bottom: 8rem;
+    }
+}
+/*Mobile*/
+@media only screen and (max-width: 480px) {
+    .header{
+        height: auto;
+        padding: 1.8rem 0 0.8rem 0 ;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .contact{
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    /*NAVBAR*/
+    nav{
+        justify-content: space-between;
+        padding-right: 1.6rem;
+        padding-left: 1.6rem;
+    }
+    .nav-items{
+        display: none;
+    }
+    .hamburger-btn{
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+    }
+    .hamburger-btn img{
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    /*About us*/
+    .info-cards{
+        justify-content: center;
+        gap: 2.8rem;
+    }
+    .c{
+        width: 100%;
+        margin-bottom:  0;
+    }
+    .c p{
+        font-size: 1.8rem;
+    }
+
+
+    /*.what-we-do*/
+    .what-we-do-section,.projects,.latest-blog,
+    .our-partners{
+        width: 95%;
+    }
+    .card{
+        width: 95%;
+        height: 35rem;
+        text-align: center;
+    }
+    .cards{
+        justify-content: center;
+    }
+    .card h4{
+        width: 100%;
+        padding: 0;
+        padding-top: 2.8rem;
+        font-size: 2rem;
+    }
+    .card p{
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
+    /*LATEST BLOGS*/
+    .blog-cards{
+        justify-content: center;
+    }
+    .blog-card{
+        width: 95%;
+    }
+    .partners-img-wrapper{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .footer{
+        width: 92%;
+    }
+    .footer-item{
+        width: 100%;
+        margin-bottom: 8rem;
+    }
+}
